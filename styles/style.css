@@ -23,7 +23,7 @@ body {
 }
 
 .hero-image {
-  background-image: url(/images/bg_img_3.png);
+  background-image: url(../images/bg_img_3.png);
   background-color: var(--darkGrey);
   background-repeat: no-repeat;
   background-attachment: fixed;
