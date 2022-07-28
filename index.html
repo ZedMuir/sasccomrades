@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!-- Fav Icon - seen in tab-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="The home page for the Small Arms School Corps (SASC) Comrades." />
+    <meta name="keywords" content="British Army, Small Arms School Corp, SASC, Comrades, Army, Warminster, Wiltshire, HQ SASC, Weapons, Training, Live Firing, Weapons Collection, Rifles, Machine Guns, Small Arms, Pam 21, Man at Arms, Corps CO, Corps RSM, SMEs, Subject Matter Experts, Safety, Advice, LFTT, LFMT, Live Fire Tactical Training, Live Fire Marksmanship Training, Marksmanship, Live Fire, Lethal Risk" />
+    <meta name="author" content="Steve Muir, Alpine Warrior Pigeon" />
+    <title>SASC Comrades; Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="wrapper">
+        <!-- Header -->
+        <nav class="menu">  <!-- Top Navigation Bar -->
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="index.html" class="active">home</a>
+            </li>
+            <li>
+              <a href="staff.html">hq staff</a>
+            </li>
+            <li>
+              <a href="media.html">media</a>
+            </li>
+            <li>
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <header>
+          <figure>
+            <img src="images/logo.png" alt="Small Arms School Corps capbadge" />
+            <figcaption></figcaption>
+          </figure>
+        </header>
+        <!-- Main content -->
+        <div class="content">
+          <hgroup>
+            <h1>Small Arms School Corps Comrades</h1>
+            <h2>Information for all SASC personnel, Past & Present</h2>
+          </hgroup>
+          <div class="details">
+            <figure>
+              <img src="images/sasc_team_pic.jpg" alt="A group of SASC Warrant Officers supporting the presitgeous shooting competition, DEFOSC, at Bisley Shooting Grounds" />
+              <figcaption>1 Div and 3 Div SASC advisors supporting DEFOSC</figcaption>
+            </figure>
+            <p>This website holds information for all <em>Small Arms School Corps</em> personnel, both past and present. No matter if you have reitred, transferred or are still serving within the Corps, there will be useful information and updates for you here at SASC Comrades.</p>
+            <p>The information available includes the contact information for HQ SASC, downloadable back copies of newsletters and Man at Arms journals, as well as select articles from around the Corps. This site is not designed for interation via comments and posts; for that, please visit our <a href="contact.html">Social Media groups</a>.</p>
+            <p>If you wish to know more about the current team at <em>HQ SASC</em>, then check out the <a href="staff.html">staff</a> page for details.</p>
+            <p>You can download media such as Man at Arm journals, newsletters, old and new videos and photos on the <a href="media.html">media</a> page. Please get in touch if you have any old SASC related photos or videos that you would like to be uploaded and available to all.</p>
+            <p>If you wish to get in touch, be that for a catch-up, to update your contact information, or to submit a story of interest for an article, please visit the <a href="contact.html">contact</a> page for details. </p>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+          <hr>
+          <address>
+            Copyright <sup>&copy;</sup> <a href="mailto:alpinewarriorpigeon@gmail.com?subject=Web%20Design">HQ SASC</a>
+          </address>
+        </footer>
+      </div>
+      <!-- Collapsing nav menu function -->
+      <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({ target }) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+      </script>
+      <script>
+        var $buoop = { required: { e: -4, f: -3, o: -3, s: -1, c: -3 }, insecure: true, api: 2020.07 };
+        function $buo_f() {
+          var e = document.createElement("script");
+          e.src = "//browser-update.org/update.min.js";
+          document.body.appendChild(e);
+        };
+        try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+        catch (e) { window.attachEvent("onload", $buo_f) }
+      </script>
+    </div>
+	</body>
+</html>
