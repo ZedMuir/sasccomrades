@@ -134,7 +134,7 @@ a:hover {
   /* box-shadow: 0 0 2px 5px var(--green); */
 }
 
-.details a:hover, address a:hover {
+.details a:hover, address a:hover, .media img:hover {
     border-radius: 10px;
     box-shadow: 0 0 2px 4px var(--green);
 }
@@ -217,6 +217,12 @@ hgroup {
   grid-row: 1 / span 2;
   align-content: center;
   justify-content: center;
+}
+
+.media {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 
 figcaption {
