@@ -106,7 +106,7 @@ header img {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  max-width: 60%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -188,33 +188,19 @@ hgroup {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
   margin-bottom: 20px;
 }
 
-.bio-right p {
-  grid-column: 1 / span 2;
-  order: -1;
+.bio p {
+  grid-column: 1 / -1;
 }
 
-.bio-left p {
-  grid-column: span 2 / -1;
-  order: -1;
-}
-
-.bio-right figure {
+.bio figure {
   display: grid;
   width: 100%;
-  grid-column: span 1 / -1;
-  grid-row: 1 / span 2;
-  align-content: center;
-  justify-content: center;
-}
-
-.bio-left figure {
-  display: grid;
-  width: 100%;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 2;
+  grid-column: 1 / -1;
+  /* grid-row: 1 / span 2; */
   align-content: center;
   justify-content: center;
 }
@@ -224,6 +210,24 @@ hgroup {
   gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
+
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.shop img {
+  max-height: 200px;
+}
+
 
 figcaption {
   font-style: italic;
@@ -268,6 +272,12 @@ address {
 
 /* Media queries */
 
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   .menu {
     order: -1;
@@ -283,12 +293,15 @@ address {
     max-height: 0;
     overflow: hidden;
     transform: rotateX(90deg);
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
+    display: grid;
+    min-width: 100px;
   }
 
   [aria-expanded="true"] ~ ul {
     display: grid;
     max-height: 500px;
+    max-width: 100px;
     transform: rotateX(0);
   }
 
@@ -312,27 +325,11 @@ address {
     font-size: 30px;
   }
 
-  .bio {
+  /* .bio {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .bio-right p {
-  grid-column: 1 / -1;
-  }
-
-  .bio-left p {
-  grid-column: 1 / -1;
-  }
-
-  .bio-right figure {
-  grid-column: span 1 / -2;
-  }
-
-  .bio-left figure {
-  grid-column: 2 / span 1;
-  }
+  } */
 
   #personal label {
   padding: 0;
@@ -345,12 +342,22 @@ address {
   .boxes > * {
   grid-column: 1 / -1;
   }
+
+  .video {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 700px) {
   .details {
     grid-column: 1 / -1;
     margin: 0 50px;
+  }
+
+  .shop {
+    grid-template-columns: 1fr;
   }
 
   h1 {
@@ -360,14 +367,6 @@ address {
   h2 {
     font-size: 30px;
     font-weight: 200;
-  }
-
-  .bio-right figure {
-  grid-column: 1 / -1;
-  }
-
-  .bio-left figure {
-  grid-column: 1 / -1;
   }
 
   footer hr {
