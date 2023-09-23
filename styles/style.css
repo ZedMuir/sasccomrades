@@ -14,12 +14,13 @@
 
 html {
   color: var(--grey);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
 }
 
 body {
-    background: var(--darkGrey);
+  background: var(--darkGrey);
 }
 
 .hero-image {
@@ -85,7 +86,9 @@ em {
 
 .wrapper {
   display: grid;
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0px, rgba(0, 0, 0, 0.7) 100%) repeat 0 0;;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0px, rgba(0, 0, 0, 0.7) 100%)
+    repeat 0 0;
 }
 
 /* Header */
@@ -134,9 +137,11 @@ a:hover {
   /* box-shadow: 0 0 2px 5px var(--green); */
 }
 
-.details a:hover, address a:hover, .media img:hover {
-    border-radius: 10px;
-    box-shadow: 0 0 2px 4px var(--green);
+.details a:hover,
+address a:hover,
+.media img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 2px 4px var(--green);
 }
 
 a.active {
@@ -176,8 +181,8 @@ hgroup {
 }
 
 .details > * {
-    max-width: 850px;
-    /* text-align: justify; */
+  max-width: 850px;
+  /* text-align: justify; */
 }
 
 .bio img {
@@ -227,7 +232,6 @@ hgroup {
 .shop img {
   max-height: 200px;
 }
-
 
 figcaption {
   font-style: italic;
@@ -344,15 +348,15 @@ footer a:hover {
   } */
 
   #personal label {
-  padding: 0;
+    padding: 0;
   }
 
   #personal p {
-  grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .boxes > * {
-  grid-column: 1 / -1;
+    grid-column: 1 / -1;
   }
 
   .video {
@@ -392,9 +396,9 @@ footer a:hover {
     grid-column: 1 / -1;
     margin: 0 20px;
   }
-  
+
   footer hr {
-  padding: 0 20px;
+    padding: 0 20px;
   }
 
   .address > * {
