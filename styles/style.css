@@ -144,7 +144,7 @@ address a:hover,
   box-shadow: 0 0 2px 4px var(--green);
 }
 
-a.active {
+.active {
   text-decoration: underline; /* applies underline on link with class of current */
   -webkit-text-decoration: underline; /* Safari prefix */
 }
